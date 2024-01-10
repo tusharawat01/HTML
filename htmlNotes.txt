@@ -1,0 +1,309 @@
+HTML
+Hyper Text Markup Language
+
+=> In HTML we use tags
+- Heading
+-Simple Text(Paragraph)
+-Image
+-Line
+-Website Link
+-Table
+-Login/Signup Form
+
+<open Tag> Content </close Tag>
+
+
+=> starting-
+<html>
+    Main html coding
+</html>
+
+=> Main structure of HTML Webpage
+<! DOCTYPE html>        -----to let the document know that type is html----
+<html>
+    <head></head>       ----we write meta information inside head  (title ,etenal file link,etc)------
+    <body></body>       ----we write main content here----
+</html>
+
+=> Shortcut-- !+TAB
+
+<!DOCTYPE html>
+<html lang="en">        ---language = english----
+<head>
+    <meta charset="UTF-8">      ----UTF-8 is used for encoding---
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+=> Shortcut---h1+TAB or ENTER
+
+<h1></h1>
+
+=> Shortcut---ALT+SHIFT+DOWN ARROW (if i want to copy same thing)
+
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+=> <h1><h2><h3><h4><h5><h6> are basically headings h1>h2>h3>h4>h5>h6
+
+=> Comments Shortcut---CTRL+/
+<!--not part of code-->
+
+=> Paragraph Tag
+<p></p>
+
+=> Break Tag (self closing Tag)
+<br>    ---is we want to Break paragraph to next line---
+<p>hello<br>i am good</p>
+
+=> use Lorem ipsum for dummy data(Optional)
+
+=> to add links we use a Tag
+<a href =""> </a>  ---href attribute is required to add links---
+<body>
+    <a href="https://google.co.in" target ="_blank">Go to google</a>     -- target attribute is used to open google in next tag---
+
+</body>
+
+=>  ./ meaning
+<body>
+    <a href="https://google.co.in" target="_blank">Go to google</a>
+    <br>
+    <a href="./index.html">My blog</a> -----./ means inside current folder its present---
+
+</body>
+
+=>../ meaning
+if the file is inside another folder then ../ means one folder out or back
+
+=> <img> Tag (self closing tag)
+
+ <img src="./hero.png" alt="Snake">    ---in alt we describe our image----
+
+ =>  List
+ -) Orderd List<body>
+    <ol type = 'a'>     --- type is used to no. the list if we did not give type by default it is no. like 1,2,3etc---
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+</body>
+
+-) Unordered List
+<ul style="list-style-type: circle;">   --- inthis we give styles instead os alphabet or no marking----
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+</ul>
+
+-)Description List  
+<dl>
+        <dt>Guitar</dt>
+        <dd>Guitar is 6 string instrument</dd>
+        <dt>Flute</dt>
+        <dd>Flute is made of wooden basically</dd>
+    </dl>
+
+
+                TAGS            |           USED FOR
+________________________________|_____________________________
+1>   <b> or   <strong>          |        BOLD           
+2>   <i> or   <em>              |        ITALLIC
+3>   <del>                      |        line in between Text
+4>   <sub>                      |        subscript
+5>   <sup>                      |        superscript
+6>   <mark>                     |        highlight text
+
+=>  <Table> Tag
+used to create table
+<body>
+    <table border='1'>  --for border--
+        <thead>     ---heading---
+            <tr>            ---for rows---
+                <th>First Name</th>   ---for heading----
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>    ----body--- 
+            <tr>
+                <td>Tushar</td>     ----data for body row-----
+                <td>Rawat</td>
+            </tr>
+            <tr>
+                <td>Harshit</td>
+                <td>Vasishit</td>
+            </tr>
+        </tbody>
+    </table>
+</body>    
+
+=> <form> Tag
+<body>
+    <h1>HTML FORMS</h1>         ----heading---
+    <form>    ----initializing of form----
+        <label for="username">Username :</label>   
+        <input type="text" id="username">
+        <br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password">
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email">
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+=> Placeholder (describes the expected value of an inputfield or text area)
+=> required attribute( specify that an item must be selected  before submitting the form)
+<body>
+    <h1>HTML FORMS</h1>
+    <form>
+        <label for="username">Username :</label>
+        <input type="text" id="username" placeholder="username" required>
+        <br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" placeholder="your password" required>
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="your email" required>
+        <br>br
+
+        <input type="submit" value="Submit">
+
+    </form>
+    
+</body>
+
+=> action attribute(specifies where to send the form data when a form is submitted)
+=> method attribute(specify how to send form data)
+<body>
+    <h1>HTML FORMS</h1>
+    <form action="thank you.html" method="post"> <!--get used to go data on url-->
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+=> radio button
+<body>
+    <h1>HTML FORMS</h1>
+    <form>
+        <p>Select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="Male"><br>   ----value attribute is used when we want to send data to backend or anwhere else---
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="Female"><br> 
+
+        <label for="others">Other</label>
+        <input type="radio" name="gender" id="others" value="Others">
+
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+=>Dropdown list
+<label for="age-group">Select your age group</label>
+        <select name="age-group-values" id="age-group">
+            <option value="5-10">5-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-50">21-50</option>
+            <option value="50+">50+</option>
+        </select>
+
+=> textarea
+
+<body>
+    <p>comment below</p>
+    <textarea name="" id="" cols="30" rows="10" placeholder="type here"></textarea>
+
+</body>
+
+=>for adding date color or to choose file
+ Pick color : <input type="color" name="" ,id=""><br>
+    Date : <input type="date" name="" id=""><br>
+    <input type="file" name="" id="">
+
+=> div and span Tag
+// div tag made a specific container so that we can use differnet properties on that
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span</title>
+    <style>
+        .container1 {
+            background: black;
+            color: aliceblue;
+        }
+         .container2 {
+            background: greenyellow;
+            color: black;
+        }
+        .cls1 {
+            background: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>heading</h1>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ul>
+    </div>
+    <div class="container2">
+        <h2>heading <span class="cls1">2</span></h2>   //span is used to style particular things and it did not take full width
+        <ul>
+            <li>asdfg</li>
+            <li>asdfg</li>
+            <li>asdfg</li>
+        </ul>
+    </div>
+
+
+</body>
+
+=> 
+
+                formula         |           USED FOR
+________________________________|_____________________________
+1>   &copy                      |        Copyright symbol          
+2>   &lt                        |        less than symbol(<)
+3>   &gt                        |        greater than symbol(>)
+etc.
